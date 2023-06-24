@@ -97,6 +97,22 @@ Hooks.on('diceSoNiceReady', (dice3d) => { // for the dices
     ],
     system: "KBT"
   });
+
+  dice3d.addDicePreset({
+    type: "d12",
+    labels: [
+      "modules/kbt-dice/graphics/faces/GoblinToasti.png",
+      "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", 
+      "modules/kbt-dice/graphics/faces/trigger.png"
+    ],
+    bumpMaps: [
+      "modules/kbt-dice/graphics/faces/GoblinToasti_bump.png",
+      , , , , , , , , , ,
+      "modules/kbt-dice/graphics/faces/trigger_bump.png"
+    ],
+    system: "KBT"
+  });
+
   /*
   dice3d.addTexture({});
 
