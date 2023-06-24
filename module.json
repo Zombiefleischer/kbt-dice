@@ -1,0 +1,42 @@
+{
+  "id": "kbt-dice",
+  "name": "kbt-dice",
+  "title": "Kellerbier-Tavernen-Würfel",
+  "description": "Dice so Nice addon themed after the great [Kellerbier-Taverne](https://discord.gg/kellerbiertaverne), a german only Pen and Paper Community.",
+  "authors": [
+    {
+      "name": "Zombiefleischer",
+      "discord": "zombiefleischer"
+    },
+    {
+      "name": "Quallini",
+      "discord": "quallini"
+    }
+  ],
+  "url": "https://github.com/Zombiefleischer/kbt-dice",
+  "version": "1.0.0",
+  "library": "false",
+  "compatibility": {
+    "minimum": "9",
+    "verified": "11",
+    "maximum": "11"
+  },
+  "relationships": {
+    "requires": [{
+      "id": "dice-so-nice",
+      "type": "module",
+      "manifest": "https://gitlab.com/riccisi/foundryvtt-dice-so-nice/raw/master/module/module.json"
+    }]
+  },
+  "conflicts": [],
+  "esmodules": [],
+  "scripts": [
+    "scripts/kbt-dice.js"
+  ],
+  "styles": [],
+  "languages": [],
+  "media": [],
+  "readme": "https://raw.githubusercontent.com/Zombiefleischer/kbt-dice/main/README.md",
+  "manifest": "https://github.com/Zombiefleischer/kbt-dice/releases/latest/download/module.json",
+  "download": ""
+}
