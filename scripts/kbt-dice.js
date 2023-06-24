@@ -36,7 +36,67 @@ Hooks.on('diceSoNiceReady', (dice3d) => { // for the dices
     ],
     system: "KBT"
   });
-  
+
+  dice3d.addDicePreset({
+    type: "d4",
+    labels: [
+      "modules/kbt-dice/graphics/faces/GoblinToasti.png",
+      "2", "3",
+      "modules/kbt-dice/graphics/faces/trigger.png"
+    ],
+    bumpMaps: [
+      "modules/kbt-dice/graphics/faces/GoblinToasti_bump.png",
+      , , 
+      "modules/kbt-dice/graphics/faces/trigger_bump.png"
+    ],
+    system: "KBT"
+  });
+
+  dice3d.addDicePreset({
+    type: "d6",
+    labels: [
+      "modules/kbt-dice/graphics/faces/GoblinToasti.png",
+      "2", "3", "4", "5", 
+      "modules/kbt-dice/graphics/faces/trigger.png"
+    ],
+    bumpMaps: [
+      "modules/kbt-dice/graphics/faces/GoblinToasti_bump.png",
+      , , , , 
+      "modules/kbt-dice/graphics/faces/trigger_bump.png"
+    ],
+    system: "KBT"
+  });
+
+
+  dice3d.addDicePreset({
+    type: "d8",
+    labels: [
+      "modules/kbt-dice/graphics/faces/GoblinToasti.png",
+      "2", "3", "4", "5", "6", "7",
+      "modules/kbt-dice/graphics/faces/trigger.png"
+    ],
+    bumpMaps: [
+      "modules/kbt-dice/graphics/faces/GoblinToasti_bump.png",
+      , , , , , ,
+      "modules/kbt-dice/graphics/faces/trigger_bump.png"
+    ],
+    system: "KBT"
+  });
+
+  dice3d.addDicePreset({
+    type: "d10",
+    labels: [
+      "modules/kbt-dice/graphics/faces/GoblinToasti.png",
+      "2", "3", "4", "5", "6", "7", "8", "9",
+      "modules/kbt-dice/graphics/faces/trigger.png"
+    ],
+    bumpMaps: [
+      "modules/kbt-dice/graphics/faces/GoblinToasti_bump.png",
+      , , , , , , , ,
+      "modules/kbt-dice/graphics/faces/trigger_bump.png"
+    ],
+    system: "KBT"
+  });
   /*
   dice3d.addTexture({});
 
