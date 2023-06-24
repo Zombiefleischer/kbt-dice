@@ -12,9 +12,9 @@ Hooks.on('diceSoNiceReady', (dice3d) => { // for the dices
   dice3d.addDicePreset({
     type: "d20",
     labels: [
-      "modules/kbt-dice/graphics/faces/GoblinToasti.png",
+      "modules/kbt-dice/graphics/faces/hidethepainbearold.png",
       "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19",
-      "modules/kbt-dice/graphics/faces/trigger.png"
+      "modules/kbt-dice/graphics/faces/wondertoni.png"
     ],
     bumpMaps: [
       "modules/kbt-dice/graphics/faces/GoblinToasti_bump.png",
@@ -40,7 +40,7 @@ Hooks.on('diceSoNiceReady', (dice3d) => { // for the dices
   dice3d.addDicePreset({
     type: "d4",
     labels: [
-      "modules/kbt-dice/graphics/faces/GoblinToasti.png",
+      "modules/kbt-dice/graphics/faces/GoblinRage.png",
       "2", "3",
       "modules/kbt-dice/graphics/faces/trigger.png"
     ],
@@ -55,9 +55,9 @@ Hooks.on('diceSoNiceReady', (dice3d) => { // for the dices
   dice3d.addDicePreset({
     type: "d6",
     labels: [
-      "modules/kbt-dice/graphics/faces/GoblinToasti.png",
+      "modules/kbt-dice/graphics/faces/GobboWissi.png",
       "2", "3", "4", "5", 
-      "modules/kbt-dice/graphics/faces/trigger.png"
+      "modules/kbt-dice/graphics/faces/Wicked.png"
     ],
     bumpMaps: [
       "modules/kbt-dice/graphics/faces/GoblinToasti_bump.png",
