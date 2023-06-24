@@ -24,6 +24,19 @@ Hooks.on('diceSoNiceReady', (dice3d) => { // for the dices
     system: "KBT"
   });
 
+  dice3d.addDicePreset({
+    type: "d2",
+    labels: [
+      "modules/kbt-dice/graphics/faces/GoblinToasti.png",
+      "modules/kbt-dice/graphics/faces/trigger.png"
+    ],
+    bumpMaps: [
+      "modules/kbt-dice/graphics/faces/GoblinToasti_bump.png",
+      "modules/kbt-dice/graphics/faces/trigger_bump.png"
+    ],
+    system: "KBT"
+  });
+  
   /*
   dice3d.addTexture({});
 
