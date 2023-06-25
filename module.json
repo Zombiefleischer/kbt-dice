@@ -33,7 +33,9 @@
   "scripts": [
     "scripts/kbt-dice.js"
   ],
-  "styles": [],
+  "styles": [
+    "dicestyle.css"
+  ],
   "languages": [],
   "media": [],
   "readme": "https://raw.githubusercontent.com/Zombiefleischer/kbt-dice/main/README.md",
