@@ -15,30 +15,11 @@ Hooks.on('diceSoNiceReady', (dice3d) => { // for the dices
 
   dice3d.addSystem({ id: "KBT", name: "🍺 Kellerbier-Taverne" }, false);
 
-  dice3d.addDicePreset({
-    type: "d20",
-    labels: [
-      "modules/kbt-dice/graphics/faces/hidethepainbearold.png",
-      "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19",
-      "modules/kbt-dice/graphics/faces/wondertoni.png"
-    ],
-    bumpMaps: [
-      "modules/kbt-dice/graphics/faces/GoblinToasti_bump.png",
-      , , , , , , , , , , , , , , , , , ,
-      "modules/kbt-dice/graphics/faces/trigger_bump.png"
-    ],
-    system: "KBT"
-  });
-
-  dice3d.addDicePreset({
+    dice3d.addDicePreset({
     type: "d2",
     labels: [
       "modules/kbt-dice/graphics/faces/GoblinToasti.png",
       "modules/kbt-dice/graphics/faces/trigger.png"
-    ],
-    bumpMaps: [
-      "modules/kbt-dice/graphics/faces/GoblinToasti_bump.png",
-      "modules/kbt-dice/graphics/faces/trigger_bump.png"
     ],
     system: "KBT"
   });
@@ -50,11 +31,6 @@ Hooks.on('diceSoNiceReady', (dice3d) => { // for the dices
       "2", "3",
       "modules/kbt-dice/graphics/faces/trigger.png"
     ],
-    bumpMaps: [
-      "modules/kbt-dice/graphics/faces/GoblinToasti_bump.png",
-      , , 
-      "modules/kbt-dice/graphics/faces/trigger_bump.png"
-    ],
     system: "KBT"
   });
 
@@ -64,11 +40,6 @@ Hooks.on('diceSoNiceReady', (dice3d) => { // for the dices
       "modules/kbt-dice/graphics/faces/GobboWissi.png",
       "2", "3", "4", "5", 
       "modules/kbt-dice/graphics/faces/Wicked.png"
-    ],
-    bumpMaps: [
-      "modules/kbt-dice/graphics/faces/GoblinToasti_bump.png",
-      , , , , 
-      "modules/kbt-dice/graphics/faces/trigger_bump.png"
     ],
     system: "KBT"
   });
@@ -81,11 +52,6 @@ Hooks.on('diceSoNiceReady', (dice3d) => { // for the dices
       "2", "3", "4", "5", "6", "7",
       "modules/kbt-dice/graphics/faces/trigger.png"
     ],
-    bumpMaps: [
-      "modules/kbt-dice/graphics/faces/GoblinToasti_bump.png",
-      , , , , , ,
-      "modules/kbt-dice/graphics/faces/trigger_bump.png"
-    ],
     system: "KBT"
   });
 
@@ -95,11 +61,6 @@ Hooks.on('diceSoNiceReady', (dice3d) => { // for the dices
       "modules/kbt-dice/graphics/faces/GoblinToasti.png",
       "2", "3", "4", "5", "6", "7", "8", "9",
       "modules/kbt-dice/graphics/faces/trigger.png"
-    ],
-    bumpMaps: [
-      "modules/kbt-dice/graphics/faces/GoblinToasti_bump.png",
-      , , , , , , , ,
-      "modules/kbt-dice/graphics/faces/trigger_bump.png"
     ],
     system: "KBT"
   });
@@ -111,10 +72,15 @@ Hooks.on('diceSoNiceReady', (dice3d) => { // for the dices
       "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", 
       "modules/kbt-dice/graphics/faces/trigger.png"
     ],
-    bumpMaps: [
-      "modules/kbt-dice/graphics/faces/GoblinToasti_bump.png",
-      , , , , , , , , , ,
-      "modules/kbt-dice/graphics/faces/trigger_bump.png"
+    system: "KBT"
+  });
+
+  dice3d.addDicePreset({
+    type: "d20",
+    labels: [
+      "modules/kbt-dice/graphics/faces/hidethepainbearold.png",
+      "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19",
+      "modules/kbt-dice/graphics/faces/wondertoni.png"
     ],
     system: "KBT"
   });
@@ -128,6 +94,16 @@ Hooks.on('diceSoNiceReady', (dice3d) => { // for the dices
     ],
     system: "KBT"
   }, "d10");
+
+  dice3d.addDicePreset({
+    type: "df",
+    labels: [
+      "modules/kbt-dice/graphics/faces/mug.png",
+      "",
+      "modules/kbt-dice/graphics/faces/beer.png"
+    ],
+    system: "KBT"
+  });
 
   //themes
 
@@ -143,9 +119,9 @@ Hooks.on('diceSoNiceReady', (dice3d) => { // for the dices
     description: "🍺 Kellerbier-Taverne-Cat",
     category: "Kellerbier-Taverne",
     foreground: "#000000",
-    background: "#96642C",
-    outline: "#ffffff",
-    edge: "#96642C",
+    background: "#000000",
+    outline: "#000000",
+    edge: "#000000",
     texture: "catpattern",
     material: "cat",
     font: "🍺 Dancing Script",
@@ -168,9 +144,9 @@ Hooks.on('diceSoNiceReady', (dice3d) => { // for the dices
     description: "🍺 Kellerbier-Taverne",
     category: "Kellerbier-Taverne",
     foreground: "#000000",
-    background: "#96642C",
-    outline: "#ffffff",
-    edge: "#96642C",
+    background: "#000000",
+    outline: "#000000",
+    edge: "#000000",
     texture: "goa",
     material: "wood",
     font: "🍺 Dancing Script",
@@ -186,33 +162,76 @@ Hooks.on('diceSoNiceReady', (dice3d) => { // for the dices
 
 // dices
 
+dice3d.addDicePreset({
+  type: "d2",
+  labels: [
+    "modules/kbt-dice/graphics/faces/mug.png",
+    "modules/kbt-dice/graphics/faces/beer.png"
+  ],
+  font: "🍺 Dancing Script",
+  system: "KBT-vanilla"
+});
+
+dice3d.addDicePreset({
+  type: "d4",
+  labels: [
+    "modules/kbt-dice/graphics/faces/mug_d4.png",
+    "2", "3",
+    "modules/kbt-dice/graphics/faces/beer_d4.png"
+  ],
+  font: "🍺 Dancing Script",
+  system: "KBT-vanilla"
+});
+
+dice3d.addDicePreset({
+  type: "d6",
+  labels: [
+    "modules/kbt-dice/graphics/faces/mug.png",
+    "2", "3", "4", "5",
+    "modules/kbt-dice/graphics/faces/beer.png"
+  ],
+  font: "🍺 Dancing Script",
+  system: "KBT-vanilla"
+});
+
+dice3d.addDicePreset({
+  type: "d8",
+  labels: [
+    "modules/kbt-dice/graphics/faces/mug_d8.png",
+    "2", "3", "4", "5", "6", "7",
+    "modules/kbt-dice/graphics/faces/beer_d8.png"
+  ],
+  font: "🍺 Dancing Script",
+  system: "KBT-vanilla"
+});
+
+dice3d.addDicePreset({
+  type: "d10",
+  labels: [
+    "modules/kbt-dice/graphics/faces/mug_20.png",
+    "2", "3", "4", "5", "6", "7", "8", "9",
+    "modules/kbt-dice/graphics/faces/beer_20.png"
+  ],
+  font: "🍺 Dancing Script",
+  system: "KBT-vanilla"
+});
+
+dice3d.addDicePreset({
+  type: "d12",
+  labels: [
+    "modules/kbt-dice/graphics/faces/mug.png",
+    "2", "3", "4", "5", "6", "7", "8", "9", "10", "11",
+    "modules/kbt-dice/graphics/faces/beer.png"
+  ],
+  font: "🍺 Dancing Script",
+  system: "KBT-vanilla"
+});
+
   dice3d.addDicePreset({
     type: "d20",
     labels: [
       "modules/kbt-dice/graphics/faces/mug_20.png",
       "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19",
-      "modules/kbt-dice/graphics/faces/beer_20.png"
-    ],
-    font: "🍺 Dancing Script",
-    system: "KBT-vanilla"
-  });
-
-  dice3d.addDicePreset({
-    type: "d12",
-    labels: [
-      "modules/kbt-dice/graphics/faces/mug.png",
-      "2", "3", "4", "5", "6", "7", "8", "9", "10", "11",
-      "modules/kbt-dice/graphics/faces/beer.png"
-    ],
-    font: "🍺 Dancing Script",
-    system: "KBT-vanilla"
-  });
-
-  dice3d.addDicePreset({
-    type: "d10",
-    labels: [
-      "modules/kbt-dice/graphics/faces/mug_20.png",
-      "2", "3", "4", "5", "6", "7", "8", "9",
       "modules/kbt-dice/graphics/faces/beer_20.png"
     ],
     font: "🍺 Dancing Script",
@@ -231,53 +250,10 @@ Hooks.on('diceSoNiceReady', (dice3d) => { // for the dices
   }, "d10");
 
   dice3d.addDicePreset({
-    type: "d8",
-    labels: [
-      "modules/kbt-dice/graphics/faces/mug_d8.png",
-      "2", "3", "4", "5", "6", "7",
-      "modules/kbt-dice/graphics/faces/beer_d8.png"
-    ],
-    font: "🍺 Dancing Script",
-    system: "KBT-vanilla"
-  });
-
-  dice3d.addDicePreset({
-    type: "d6",
-    labels: [
-      "modules/kbt-dice/graphics/faces/mug.png",
-      "2", "3", "4", "5",
-      "modules/kbt-dice/graphics/faces/beer.png"
-    ],
-    font: "🍺 Dancing Script",
-    system: "KBT-vanilla"
-  });
-
-  dice3d.addDicePreset({
     type: "df",
     labels: [
       "modules/kbt-dice/graphics/faces/mug.png",
       "",
-      "modules/kbt-dice/graphics/faces/beer.png"
-    ],
-    font: "🍺 Dancing Script",
-    system: "KBT-vanilla"
-  });
-
-  dice3d.addDicePreset({
-    type: "d4",
-    labels: [
-      "modules/kbt-dice/graphics/faces/mug_d4.png",
-      "2", "3",
-      "modules/kbt-dice/graphics/faces/beer_d4.png"
-    ],
-    font: "🍺 Dancing Script",
-    system: "KBT-vanilla"
-  });
-
-  dice3d.addDicePreset({
-    type: "d2",
-    labels: [
-      "modules/kbt-dice/graphics/faces/mug.png",
       "modules/kbt-dice/graphics/faces/beer.png"
     ],
     font: "🍺 Dancing Script",
