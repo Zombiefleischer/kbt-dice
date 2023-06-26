@@ -156,11 +156,11 @@ Hooks.on('diceSoNiceReady', (dice3d) => { // for the dices
   }, "preferred");
 
   //theme psychedelic
-  
+
   // irgendwas stimmt hier noch nicht mit der beschreibung von theme
 
-  dice3d.addTexture("KBT-goa", {
-    name: "🍺 KBT",
+  dice3d.addTexture("KBT", {
+    name: "🍺 KBT-goa",
     composite: "source-over",
     source: "modules/kbt-dice/graphics/textures/psychedelic.png"
   });
