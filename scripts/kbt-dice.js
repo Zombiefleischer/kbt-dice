@@ -157,8 +157,6 @@ Hooks.on('diceSoNiceReady', (dice3d) => { // for the dices
 
   //theme psychedelic
 
-  // irgendwas stimmt hier noch nicht mit der beschreibung von theme
-
   dice3d.addTexture("KBT", {
     name: "🍺 KBT-goa",
     composite: "source-over",
@@ -167,7 +165,7 @@ Hooks.on('diceSoNiceReady', (dice3d) => { // for the dices
 
   dice3d.addColorset({
     name: "KBT",
-    description: "🍺 Kellerbier-Taverne-goa",
+    description: "🍺 Kellerbier-Taverne",
     category: "Kellerbier-Taverne",
     foreground: "#000000",
     background: "#96642C",
