@@ -10,6 +10,9 @@ Hooks.on("init", () => { // for the font init
 Hooks.on('diceSoNiceReady', (dice3d) => { // for the dices
   
   // Default Kellerbier-Tavernen Dice
+
+  //dices
+
   dice3d.addSystem({ id: "KBT", name: "🍺 Kellerbier-Taverne" }, false);
 
   dice3d.addDicePreset({
@@ -126,9 +129,64 @@ Hooks.on('diceSoNiceReady', (dice3d) => { // for the dices
     system: "KBT"
   }, "d10");
 
+  //themes
+
+//theme cat
+  dice3d.addTexture("KBT-cat", {
+    name: "🍺 KBT cat",
+    composite: "source-over",
+    source: "modules/kbt-dice/graphics/textures/catpattern.png"
+  });
+
+  dice3d.addColorset({
+    name: "KBT",
+    description: "🍺 Kellerbier-Taverne-Cat",
+    category: "Kellerbier-Taverne",
+    foreground: "#000000",
+    background: "#96642C",
+    outline: "#ffffff",
+    edge: "#96642C",
+    texture: "catpattern",
+    material: "cat",
+    font: "🍺 Dancing Script",
+    fontScale: {
+      "df": 1.5
+    },
+    visibility: "visible"
+  }, "preferred");
+
+  //theme psychedelic
+  
+  // irgendwas stimmt hier noch nicht mit der beschreibung von theme
+
+  dice3d.addTexture("KBT-goa", {
+    name: "🍺 KBT",
+    composite: "source-over",
+    source: "modules/kbt-dice/graphics/textures/psychedelic.png"
+  });
+
+  dice3d.addColorset({
+    name: "KBT",
+    description: "🍺 Kellerbier-Taverne-goa",
+    category: "Kellerbier-Taverne",
+    foreground: "#000000",
+    background: "#96642C",
+    outline: "#ffffff",
+    edge: "#96642C",
+    texture: "goa",
+    material: "wood",
+    font: "🍺 Dancing Script",
+    fontScale: {
+      "df": 1.5
+    },
+    visibility: "visible"
+  }, "preferred");
+
   // kbt- vanilla theme
 
   dice3d.addSystem({ id: "KBT-vanilla", name: "🍺 Kellerbier-Taverne-Bar" }, false);
+
+// dices
 
   dice3d.addDicePreset({
     type: "d20",
@@ -227,6 +285,8 @@ Hooks.on('diceSoNiceReady', (dice3d) => { // for the dices
     font: "🍺 Dancing Script",
     system: "KBT-vanilla"
   });
+
+  //theme 
 
   dice3d.addTexture("KBT-wood", {
     name: "🍺 KBT Wooden Bar",
