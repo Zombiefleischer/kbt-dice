@@ -116,6 +116,18 @@ Hooks.on('diceSoNiceReady', (dice3d) => { // for the dices
     system: "KBT"
   });
 
+  dice3d.addDicePreset({
+    type: "d100",
+    labels: [
+      "10", "20", "30", "40", "50", "60", "70", "80",
+      "modules/kbt-dice/graphics/faces/mug_20.png",
+      "modules/kbt-dice/graphics/faces/beer_20.png"
+    ],
+    system: "KBT"
+  }, "d10");
+
+  // kbt- vanilla theme
+
   dice3d.addSystem({ id: "KBT-vanilla", name: "🍺 Kellerbier-Taverne-Bar" }, false);
 
   dice3d.addDicePreset({
