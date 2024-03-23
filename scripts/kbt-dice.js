@@ -19,7 +19,7 @@ Hooks.on('diceSoNiceReady', (dice3d) => { // for the dices
     type: "d2",
     labels: [
       "modules/kbt-dice/graphics/faces/GoblinToasti.png",
-      "modules/kbt-dice/graphics/faces/trigger.png"
+      "modules/kbt-dice/graphics/faces/tonigrab/tonigrabd2.png"
     ],
     system: "KBT"
   });
@@ -50,7 +50,7 @@ Hooks.on('diceSoNiceReady', (dice3d) => { // for the dices
     labels: [
       "modules/kbt-dice/graphics/faces/GoblinToasti.png",
       "2", "3", "4", "5", "6", "7",
-      "modules/kbt-dice/graphics/faces/trigger.png"
+      "modules/kbt-dice/graphics/faces/tonigrab/tonigrabd8.png"
     ],
     system: "KBT"
   });
@@ -166,7 +166,7 @@ dice3d.addDicePreset({
   type: "d2",
   labels: [
     "modules/kbt-dice/graphics/faces/mug.png",
-    "modules/kbt-dice/graphics/faces/beer.png"
+    "modules/kbt-dice/graphics/faces/toni.png"
   ],
   font: "🍺 Dancing Script",
   system: "KBT-vanilla"
