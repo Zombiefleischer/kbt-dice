@@ -109,7 +109,7 @@ Hooks.on('diceSoNiceReady', (dice3d) => { // for the dices
 
 //theme cat
   dice3d.addTexture("KBT-cat", {
-    name: "🍺 KBT cat",
+    name: "🍺 KBT Cat",
     composite: "source-over",
     source: "modules/kbt-dice/graphics/textures/catpattern.png"
   });
@@ -134,7 +134,7 @@ Hooks.on('diceSoNiceReady', (dice3d) => { // for the dices
   //theme psychedelic
 
   dice3d.addTexture("KBT", {
-    name: "🍺 KBT-goa",
+    name: "🍺 KBT Goa",
     composite: "source-over",
     source: "modules/kbt-dice/graphics/textures/psychedelic.png"
   });
