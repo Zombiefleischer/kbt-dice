@@ -3,6 +3,6 @@ Dice so Nice addon themed after the great [Kellerbier-Taverne](https://discord.g
 
 
 ## Image Licenses
-The `texture` images are created with Midjourney, so the rights belongs to the owner/creator (Zombiefleischer & Gwarlini) as describted in section 4 of [Midjourney's Terms of Service](https://docs.midjourney.com/docs/terms-of-service).
+The `texture` images are created with Midjourney, so the rights belongs to the owner/creator (Zombiefleischer & Gwarlini) as described in section 4 of [Midjourney's Terms of Service](https://docs.midjourney.com/docs/terms-of-service).
 
-The `faces` images belong to their respective owners and we have an exclusive right of using them for this project/FoundryVTT module.
+The `faces` images belong to their respective owners, and we have an exclusive right of using them for this project/FoundryVTT module.
